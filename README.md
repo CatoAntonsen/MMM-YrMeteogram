@@ -1,9 +1,9 @@
 # MagicMirror² Module: YR Meteogram
-'MMM-YrMeteogram' is a module for displaying a [meteogram](https://en.wikipedia.org/wiki/Meteogram) (48 hours) for any location in **Norway only**. 
+'MMM-YrMeteogram' is a module for displaying a [meteogram](https://en.wikipedia.org/wiki/Meteogram) (48 hours) for any location. 
 
 ![Example](illustration.png) 
 
-Current version is 1.0.0. See [changelog](CHANGELOG.md "Version history") for version history.
+Current version is 1.1.0. See [changelog](CHANGELOG.md "Version history") for version history.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Add the module to the modules array in the `config/config.js` file by adding the
 	module: 'MMM-YrMeteogram',
 	position: 'bottom_right',
 	config: {
-		zip: 1270
+		url: 'https://www.yr.no/place/Norway/Oslo/Oslo/Nyjordet/'
 	}
 },
 ```
@@ -29,9 +29,8 @@ Add the module to the modules array in the `config/config.js` file by adding the
 
 These are the valid configuration options:
 
-### **zip**
-The location you want the meteogram for is given by (almost) any zip-code (postkode) in Norway. If it doesn't work with yours, try another one.
-Default is `1270` (which happens to be mine...)
+### **url**
+You have to get a URL for your desired location by searching at [Yr](https://www.yr.no/?spr=eng). You can change to a different language (Norsk/Ny-norsk, sami or English) in upper right corner. When you have found your location, copy the link and paste into config's `url`. Keep last `/`!
 
 ### **refreshInterval**
 How often you want the meteogram to update. Try to not refresh too often since it doesn't make sence.

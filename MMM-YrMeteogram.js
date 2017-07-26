@@ -12,8 +12,7 @@ Module.register("MMM-YrMeteogram",{
 	// Default module config.
 	defaults: {
 		debug: false,
-		url: "http://www.yr.no/sted/Norge/postnummer/{zip}/meteogram.png",
-		zip: 1270,
+		url: "https://www.yr.no/place/Norway/Oslo/Oslo/Nyjordet/",
 		refreshInterval: 60000
 	},
 
@@ -41,7 +40,7 @@ Module.register("MMM-YrMeteogram",{
 			var img = document.createElement("img");
 			img.setAttribute("class", "yrMeteogram"); 
 			img.id = this.config.id;
-			img.src = this.config.url.replace("{zip}", this.config.zip);
+			img.src = this.config.url + "meteogram.png";
 			return img;
 		}
 		
