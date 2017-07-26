@@ -1,7 +1,7 @@
 # MagicMirror² Module: YR Meteogram
 'MMM-YrMeteogram' is a module for displaying a [meteogram](https://en.wikipedia.org/wiki/Meteogram) (48 hours) for any location. 
 
-![Example](illustration.png) 
+![Example](illustration.png?raw=true) 
 
 Current version is 1.1.0. See [changelog](CHANGELOG.md "Version history") for version history.
 
